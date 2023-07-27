@@ -5,7 +5,24 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+  <h3>Thank you for shopping with Jungle!</h3>
+  <h4>An email has been sent to <%= @order.email %> with the confirmation of your order.</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="2">Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @order.line_items.each do |item| %>
+        # We are using the dot notation instead of the square bracket notation as the the @order and @order.line_items are model objects. the enhanced_cart is a hash created using the map function which forces us to use the square bracket notation
+        <%= render 'item', product: item.product, quantity: item.quantity.to_i %>
+      <% end %>
+    </tbody>
+  </table>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
