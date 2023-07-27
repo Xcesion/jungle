@@ -89,3 +89,13 @@
     }
   }
 }
+
+.sold-out-badge {
+  background-color: rgb(215, 91, 91);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+}    
