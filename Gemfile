@@ -57,7 +57,6 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'net-smtp', require: false
   gem 'rspec-rails'
-gem 'rspec-rails'
 end
 
 group :development do
