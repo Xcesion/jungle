@@ -14,12 +14,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'dashboard#show'
-<<<<<<< HEAD
-    resources :products, except: [:edit, :update, :show]
-    resources :categories, except: [:show]
-=======
     resources :products, except: [:edit, :update]
->>>>>>> feature/about-page
   end
  
   resources :about, only: [:index]
