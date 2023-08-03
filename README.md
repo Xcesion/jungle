@@ -31,8 +31,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Stripe
 
 ## Final Result
-!["Screenshot of PhotoLabs Home Page"]()
-!["Screenshot of PhotoLabs Home Page"]()
-!["Screenshot of PhotoLabs Home Page"]()
+!["Screenshot of Jungle Project Home Page"](https://github.com/Xcesion/jungle/blob/master/screenshot/Screenshot%202023-08-03%20at%201.07.10%20AM.png?raw=true)
+!["Screenshot of Admin Page with all products"](https://github.com/Xcesion/jungle/blob/master/screenshot/Screenshot%202023-08-03%20at%201.07.41%20AM.png?raw=true)
+!["Screenshot of Cypress testing with Jungle Project"](https://github.com/Xcesion/jungle/blob/master/screenshot/Screenshot%202023-08-03%20at%2012.57.11%20AM.png?raw=true)
 
 
