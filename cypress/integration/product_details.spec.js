@@ -1,6 +1,6 @@
 describe('product details page', () => {
 
-  it('can visit the homepage', () => {
+  it('visit the homepage', () => {
     cy.visit('/')
   })
 
@@ -15,8 +15,11 @@ describe('product details page', () => {
   it('lets you visit the selected product detail page', () => {
     cy.visit('/')
     cy.get(".products article").first().click()
-    cy.url().should("include", "/products/2")
-  
+    cy.url().should("include", "/products/2") 
   })
-
+  it('lets you visit the selected product detail page', () => {
+    cy.visit('/')
+    cy.get(".products article").last().click()
+    cy.url().should("include", "/products/1") 
+  })
 });
